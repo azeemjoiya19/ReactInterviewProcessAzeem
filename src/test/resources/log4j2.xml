@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <!-- Define Appenders -->
+    
+    
+    <Properties>
+    
+    <Property name = "basepath">./logs</Property>
+    </Properties>
+    <Appenders>
+    
+        <!-- Console Appender -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %c{1} - %msg%n" />
+        </Console>
+    
+    
+        <!-- Rolling File Appender with Size-based Policy -->
+        <RollingFile name="File" fileName="${./logs}/automation.log" filePattern="${basePath}/automation-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %c{1} - %msg%n" />
+             <Policies>
+                <!-- Size-Based Triggering Policy -->
+                <SizeBasedTriggeringPolicy size="10MB" />
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+    <!-- Define Loggers -->
+    <Loggers>
+    
+     <Root level="INFO">
+        <!-- Logger for specific package -->
+     
+            <AppenderRef ref="File" />
+            
+     </Root>
+    </Loggers>
+
+        <!-- Root Logger -->
+       
+  
+</Configuration>
