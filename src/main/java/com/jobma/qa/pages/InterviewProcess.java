@@ -1,6 +1,8 @@
 package com.jobma.qa.pages;
 
+import java.sql.Array;
 import java.time.Duration;
+import java.util.Arrays;
 import java.util.List;
 import java.util.NoSuchElementException;
 
@@ -1593,7 +1595,25 @@ public class InterviewProcess extends TestBase{
 	{
 		try
 		{
-			System.out.println("Azeem");	
+			System.out.println("Azeem");
+		 
+			
+	}
+		catch(Exception e)
+		
+		{
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
+	public void verifyCheck1()
+	{
+		try
+		{
+			System.out.println("Azeem");
+		 
 			
 	}
 		catch(Exception e)
