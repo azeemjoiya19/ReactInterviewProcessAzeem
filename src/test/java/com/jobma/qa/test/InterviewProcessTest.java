@@ -197,7 +197,7 @@ public class InterviewProcessTest extends TestBase {
 	{
 
 
-
+        System.out.println("TEST");
 		PositionPage po = new PositionPage();
 		driver.get("https://testing.jobma.com/login");
 		String interviewlink =   po.copyLinkToClipboard();

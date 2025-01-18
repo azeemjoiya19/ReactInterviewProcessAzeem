@@ -1625,6 +1625,23 @@ public class InterviewProcess extends TestBase{
 		
 	}
 	
+	public void verifyCheck12()
+	{
+		try
+		{
+			System.out.println("Azeem");
+		 
+			
+	}
+		catch(Exception e)
+		
+		{
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
 
 
 
