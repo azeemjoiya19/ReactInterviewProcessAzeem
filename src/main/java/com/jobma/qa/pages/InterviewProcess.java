@@ -1588,6 +1588,23 @@ public class InterviewProcess extends TestBase{
 			System.out.println("Save and next is disabled if no option is selected or no text in essay ");
 		}
 	}
+	
+	public void verifyCheck()
+	{
+		try
+		{
+			System.out.println("Azeem");	
+			
+	}
+		catch(Exception e)
+		
+		{
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
 
 
 
